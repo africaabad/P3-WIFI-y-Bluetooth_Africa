@@ -86,3 +86,20 @@ Esto establece una conexión WIFI, inicia un servidor .HTTP y configura una ruta
 Una vez de introduce la IP que sale por el serial port, se puede ver la web creada.
 
 ![Nuestra web](Captura.PNG)
+
+## Diagrama de flujo
+
+```mermaid
+graph TD
+    A[Inicio] --> B[Setup]
+    B --> C{WiFi Conectado?}
+    C -- Sí --> D[Iniciar Servidor HTTP]
+    D --> E[Asignar Manejador a '/']
+    E --> F[Loop]
+    C -- No --> G[Intentar Conectar a WiFi]
+    G --> C
+    F --> H{Cliente Solicita?}
+    H -- Sí --> I[Manejar Cliente]
+    I --> F
+    H -- No --> F
+```
