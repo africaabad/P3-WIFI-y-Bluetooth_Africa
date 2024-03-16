@@ -1,6 +1,6 @@
 # P3-WIFI-y-Bluetooth_Africa
 
-# PRACTICA 3 : BLUETOOTH 
+# BLUETOOTH 
 Alumna: **Àfrica Abad**
 
 ## Objectivo
