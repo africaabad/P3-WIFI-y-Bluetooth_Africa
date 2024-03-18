@@ -133,7 +133,7 @@ void loop() {
 }
 ```
 
-## Diagrama 
+## Diagrama de flujo
 
 ```mermaid
 graph TD;
